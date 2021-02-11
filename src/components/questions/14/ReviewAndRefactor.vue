@@ -18,9 +18,9 @@
 </template>
 <script>
 /// тут могли бы быть скопед слоты
-import TodoList from "@/components/questions/13/TodoList";
-import TodoItem from "@/components/questions/13/TodoItem";
-import TodoHeader from "@/components/questions/13/TodoHeader";
+import TodoList from "@/components/questions/14/TodoList";
+import TodoItem from "@/components/questions/14/TodoItem";
+import TodoHeader from "@/components/questions/14/TodoHeader";
 
 export default {
   components: {

@@ -6,7 +6,11 @@
       @inputPhone="phone = $event"
     />
     <div class="btns">
-      <button @click="active = item - 1" v-for="item in 13" :key="item">
+      <button
+        @click="active = item - 1"
+        v-for="item in tasks.length"
+        :key="item"
+      >
         {{ item }}
       </button>
     </div>
@@ -24,9 +28,10 @@ import PhoneValidation from "@/components/questions/7/PhoneValidation";
 import SlotsComponent from "@/components/questions/8/SlotsComponent";
 import RefComponent from "@/components/questions/9/RefComponent";
 import StepsComponent from "@/components/questions/10/StepsComponent";
-import ComponentForTest from "@/components/questions/11/ComponentForTest";
-import RenderFunction from "@/components/questions/12/RenderFunction";
-import ReviewAndRefactor from "@/components/questions/13/ReviewAndRefactor";
+import ClickComponent from "@/components/questions/11/ClickComponent";
+import ComponentForTest from "@/components/questions/12/ComponentForTest";
+import RenderFunction from "@/components/questions/13/RenderFunction";
+import ReviewAndRefactor from "@/components/questions/14/ReviewAndRefactor";
 
 export default {
   name: "Playground",
@@ -54,6 +59,7 @@ export default {
         SlotsComponent,
         RefComponent,
         StepsComponent,
+        ClickComponent,
         ComponentForTest,
         RenderFunction,
         ReviewAndRefactor,
